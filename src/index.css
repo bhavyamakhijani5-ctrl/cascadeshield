@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-white/10; }
+  body { @apply bg-navy-900 text-gray-100 font-body; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-navy-900; }
+  ::-webkit-scrollbar-thumb { @apply bg-navy-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-navy-500; }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl;
+  }
+  .glass-panel-dark {
+    @apply bg-navy-800/80 backdrop-blur-xl border border-white/5 rounded-xl;
+  }
+  .btn-primary {
+    @apply px-6 py-3 bg-cascade-cyan/20 border border-cascade-cyan/40 text-cascade-cyan rounded-lg font-display font-medium hover:bg-cascade-cyan/30 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,212,255,0.3)];
+  }
+  .btn-danger {
+    @apply px-6 py-3 bg-cascade-red/20 border border-cascade-red/40 text-cascade-red rounded-lg font-display font-medium hover:bg-cascade-red/30 transition-all duration-300;
+  }
+  .stat-card {
+    @apply glass-panel p-4 relative overflow-hidden;
+  }
+  .risk-badge {
+    @apply px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+}
+
+/* Leaflet dark theme overrides */
+.leaflet-container { background: #0a0e1a !important; }
+.leaflet-tile-pane { filter: brightness(0.8) contrast(1.1); }
+/* Turns standard OSM tiles into a dark basemap (no API key needed) */
+.cs-dark-tiles { filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.95) saturate(0.45); }
+.leaflet-control-zoom a { background: #141d38 !important; color: #fff !important; border-color: rgba(255,255,255,0.1) !important; }
+.leaflet-popup-content-wrapper { background: #141d38 !important; color: #fff !important; border: 1px solid rgba(255,255,255,0.1) !important; }
+.leaflet-popup-tip { background: #141d38 !important; }
+
+/* Animation helpers */
+.animate-in { animation: fadeIn 0.5s ease-out forwards; }
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+.ripple-marker { animation: ripple 2s ease-out infinite; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

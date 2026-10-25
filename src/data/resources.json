@@ -1,0 +1,218 @@
+{
+  "teams": [
+    {
+      "id": "team-ndrf-1",
+      "name": "NDRF 8th Battalion - Alpha",
+      "type": "rescue",
+      "capacity": 45,
+      "status": "available",
+      "baseLocation": [19.072, 72.880],
+      "currentZone": "Kurla",
+      "contact": "+91-22-26550101",
+      "skills": ["flood_rescue", "boat_handling", "structural_evacuation"]
+    },
+    {
+      "id": "team-ndrf-2",
+      "name": "NDRF 8th Battalion - Bravo",
+      "type": "rescue",
+      "capacity": 40,
+      "status": "available",
+      "baseLocation": [19.088, 72.862],
+      "currentZone": "Santacruz",
+      "contact": "+91-22-26550102",
+      "skills": ["flood_rescue", "rope_rescue", "hazmat"]
+    },
+    {
+      "id": "team-sdrf-1",
+      "name": "Maharashtra SDRF Unit 1",
+      "type": "rescue",
+      "capacity": 35,
+      "status": "available",
+      "baseLocation": [19.055, 72.845],
+      "currentZone": "Bandra East",
+      "contact": "+91-22-26420100",
+      "skills": ["swift_water_rescue", "debris_clearance"]
+    },
+    {
+      "id": "team-bmc-med-1",
+      "name": "Sion Hospital Rapid Trauma Response",
+      "type": "medical",
+      "capacity": 25,
+      "status": "available",
+      "baseLocation": [19.036, 72.860],
+      "currentZone": "Sion",
+      "contact": "+91-22-24076381",
+      "skills": ["triage", "emergency_trauma", "mobile_icu"]
+    },
+    {
+      "id": "team-bmc-med-2",
+      "name": "Bhabha Hospital Mobile Medical Unit",
+      "type": "medical",
+      "capacity": 20,
+      "status": "available",
+      "baseLocation": [19.054, 72.833],
+      "currentZone": "Bandra West",
+      "contact": "+91-22-26422775",
+      "skills": ["triage", "waterborne_disease_containment"]
+    },
+    {
+      "id": "team-fire-1",
+      "name": "Mumbai Fire Brigade HazMat & Flood Response",
+      "type": "fire_hazmat",
+      "capacity": 30,
+      "status": "available",
+      "baseLocation": [19.080, 72.890],
+      "currentZone": "Kalina",
+      "contact": "+91-22-22620111",
+      "skills": ["chemical_containment", "pumping", "electrical_isolation"]
+    },
+    {
+      "id": "team-civil-1",
+      "name": "Mumbai Civil Defence Corps - Zone L",
+      "type": "support",
+      "capacity": 80,
+      "status": "available",
+      "baseLocation": [19.070, 72.875],
+      "currentZone": "Kurla East",
+      "contact": "+91-22-22843577",
+      "skills": ["crowd_control", "shelter_management", "rations_distribution"]
+    }
+  ],
+  "equipment": [
+    {
+      "id": "eq-pump-high-1",
+      "name": "Heavy Dewatering Pumps (500 HP)",
+      "type": "pump",
+      "category": "dewatering",
+      "quantity": 24,
+      "available": 24,
+      "unit": "units",
+      "capacityGpm": 3000,
+      "powerSource": "diesel",
+      "location": "Kurla Pumping Station"
+    },
+    {
+      "id": "eq-pump-sub-2",
+      "name": "Submersible Trash Pumps (100 HP)",
+      "type": "pump",
+      "category": "dewatering",
+      "quantity": 36,
+      "available": 36,
+      "unit": "units",
+      "capacityGpm": 1200,
+      "powerSource": "electric/diesel",
+      "location": "Dharavi Municipal Yard"
+    },
+    {
+      "id": "eq-boat-inflatable",
+      "name": "Gemini Inflatable Rescue Boats (w/ 40HP OBM)",
+      "type": "boat",
+      "category": "watercraft",
+      "quantity": 28,
+      "available": 28,
+      "unit": "boats",
+      "passengerCapacity": 8,
+      "location": "Bandra Kurla Jetty"
+    },
+    {
+      "id": "eq-gen-mobile",
+      "name": "Mobile Generator Trailers (250 kVA)",
+      "type": "power",
+      "category": "energy",
+      "quantity": 16,
+      "available": 16,
+      "unit": "generators",
+      "fuelHours": 24,
+      "location": "Kalina Substation Reserve"
+    },
+    {
+      "id": "eq-earth-jcb",
+      "name": "Hydraulic Excavators & Backhoes (JCB)",
+      "type": "excavator",
+      "category": "heavy_machinery",
+      "quantity": 14,
+      "available": 14,
+      "unit": "machines",
+      "location": "Bandra Reclamation Depot"
+    },
+    {
+      "id": "eq-drone-recon",
+      "name": "Thermal Reconnaissance UAV Drones",
+      "type": "drone",
+      "category": "reconnaissance",
+      "quantity": 10,
+      "available": 10,
+      "unit": "drones",
+      "flightTimeMinutes": 45,
+      "location": "BKC Command Center"
+    },
+    {
+      "id": "eq-satellite-terminal",
+      "name": "Portable SATCOM Emergency Terminals",
+      "type": "communication",
+      "category": "telecom",
+      "quantity": 8,
+      "available": 8,
+      "unit": "terminals",
+      "location": "BMC Disaster Control Room"
+    }
+  ],
+  "supplies": [
+    {
+      "id": "sup-water",
+      "name": "Clean Drinking Water Packets (250ml & 1L)",
+      "type": "water",
+      "quantity": 75000,
+      "available": 75000,
+      "unit": "liters",
+      "shelfLifeDays": 180,
+      "storageLocation": "Dharavi Central Warehouse"
+    },
+    {
+      "id": "sup-food",
+      "name": "Ready-to-Eat High-Nutrition Disaster Rations",
+      "type": "food",
+      "quantity": 45000,
+      "available": 45000,
+      "unit": "meals",
+      "shelfLifeDays": 365,
+      "storageLocation": "Kurla Godown 4"
+    },
+    {
+      "id": "sup-medical",
+      "name": "Emergency Medical Trauma & ORS Kits",
+      "type": "medical",
+      "quantity": 3500,
+      "available": 3500,
+      "unit": "kits",
+      "storageLocation": "Sion Hospital Pharmacy Depot"
+    },
+    {
+      "id": "sup-sandbag",
+      "name": "High-Density Polypropylene Sandbags (Filled)",
+      "type": "barrier",
+      "quantity": 25000,
+      "available": 25000,
+      "unit": "bags",
+      "storageLocation": "Mithi Embankment Works Depot"
+    },
+    {
+      "id": "sup-lifejacket",
+      "name": "SOLAS Approved Life Jackets & Flotation Rings",
+      "type": "safety",
+      "quantity": 6000,
+      "available": 6000,
+      "unit": "units",
+      "storageLocation": "BKC Fire Station"
+    },
+    {
+      "id": "sup-tarpaulin",
+      "name": "Heavy Duty Waterproof Shelter Tarpaulins",
+      "type": "shelter",
+      "quantity": 8000,
+      "available": 8000,
+      "unit": "sheets",
+      "storageLocation": "Kalina Relief Camp Storage"
+    }
+  ]
+}

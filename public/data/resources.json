@@ -1,0 +1,51 @@
+{
+  "teams": {
+    "rescue": {
+      "total": 12,
+      "available": 12,
+      "base_lat": 19.076,
+      "base_lng": 72.877,
+      "speed_kmph": 15
+    },
+    "medical": {
+      "total": 5,
+      "available": 5,
+      "base_lat": 19.086000000000002,
+      "base_lng": 72.887,
+      "speed_kmph": 20
+    }
+  },
+  "equipment": {
+    "boats": {
+      "total": 8,
+      "available": 8,
+      "base_zone": "Z01"
+    },
+    "pumps": {
+      "total": 10,
+      "available": 10,
+      "base_zone": "Z05"
+    },
+    "generators": {
+      "total": 6,
+      "available": 6,
+      "base_zone": "Z03"
+    }
+  },
+  "supplies": {
+    "relief_kits": {
+      "total": 5000,
+      "per_person": 1,
+      "base_zone": "Z01"
+    },
+    "water_liters": {
+      "total": 50000,
+      "per_person": 3,
+      "base_zone": "Z05"
+    },
+    "medical_kits": {
+      "total": 500,
+      "base_zone": "Z10"
+    }
+  }
+}

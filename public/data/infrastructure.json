@@ -1,0 +1,571 @@
+{
+  "substations": [
+    {
+      "id": "SUB1",
+      "name": "Substation Alpha",
+      "lat": 19.02371320385142,
+      "lng": 72.83351956284896,
+      "capacity_mw": 96,
+      "elevation_m": 27.180680624367827,
+      "flood_threshold_m": 1.8497173954382813,
+      "zones_served": [
+        "Z01",
+        "Z02",
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06"
+      ]
+    },
+    {
+      "id": "SUB2",
+      "name": "Substation Beta",
+      "lat": 19.03824381938373,
+      "lng": 72.92503886053409,
+      "capacity_mw": 65,
+      "elevation_m": 36.165130712479616,
+      "flood_threshold_m": 0.9628855157091482,
+      "zones_served": [
+        "Z07",
+        "Z08",
+        "Z09",
+        "Z10",
+        "Z11",
+        "Z12"
+      ]
+    },
+    {
+      "id": "SUB3",
+      "name": "Substation Gamma",
+      "lat": 19.08746772587776,
+      "lng": 72.89119621528387,
+      "capacity_mw": 93,
+      "elevation_m": 11.546602070575254,
+      "flood_threshold_m": 1.2075740114803366,
+      "zones_served": [
+        "Z13",
+        "Z14",
+        "Z15",
+        "Z16",
+        "Z17",
+        "Z18"
+      ]
+    },
+    {
+      "id": "SUB4",
+      "name": "Substation Delta",
+      "lat": 19.106427428827256,
+      "lng": 72.8952473879768,
+      "capacity_mw": 115,
+      "elevation_m": 24.102595309983613,
+      "flood_threshold_m": 0.8664508306576058,
+      "zones_served": [
+        "Z19",
+        "Z20",
+        "Z21",
+        "Z22",
+        "Z23",
+        "Z24"
+      ]
+    },
+    {
+      "id": "SUB5",
+      "name": "Substation Epsilon",
+      "lat": 19.09460065068982,
+      "lng": 72.90186892239294,
+      "capacity_mw": 102,
+      "elevation_m": 10.306916458720089,
+      "flood_threshold_m": 1.7305679053372163,
+      "zones_served": [
+        "Z25",
+        "Z26",
+        "Z27",
+        "Z28",
+        "Z29",
+        "Z30"
+      ]
+    }
+  ],
+  "pumpStations": [
+    {
+      "id": "PS1",
+      "name": "Pump Station North",
+      "lat": 19.023973134807424,
+      "lng": 72.83009400650488,
+      "capacity_mld": 194,
+      "elevation_m": 26.7,
+      "powered_by": "SUB1",
+      "zones_served": [
+        "Z01",
+        "Z02",
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06",
+        "Z07",
+        "Z08"
+      ]
+    },
+    {
+      "id": "PS2",
+      "name": "Pump Station South",
+      "lat": 19.034888026523145,
+      "lng": 72.89952812346735,
+      "capacity_mld": 136,
+      "elevation_m": 19,
+      "powered_by": "SUB2",
+      "zones_served": [
+        "Z08",
+        "Z09",
+        "Z10",
+        "Z11",
+        "Z12",
+        "Z13",
+        "Z14",
+        "Z15"
+      ]
+    },
+    {
+      "id": "PS3",
+      "name": "Pump Station East",
+      "lat": 19.059352821425968,
+      "lng": 72.92426267051646,
+      "capacity_mld": 113,
+      "elevation_m": 41.1,
+      "powered_by": "SUB3",
+      "zones_served": [
+        "Z15",
+        "Z16",
+        "Z17",
+        "Z18",
+        "Z19",
+        "Z20",
+        "Z21",
+        "Z22"
+      ]
+    },
+    {
+      "id": "PS4",
+      "name": "Pump Station West",
+      "lat": 19.106455944945328,
+      "lng": 72.85463884963157,
+      "capacity_mld": 195,
+      "elevation_m": 26.1,
+      "powered_by": "SUB4",
+      "zones_served": [
+        "Z22",
+        "Z23",
+        "Z24",
+        "Z25",
+        "Z26",
+        "Z27",
+        "Z28",
+        "Z29"
+      ]
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "H1",
+      "name": "City General Hospital",
+      "lat": 19.022416999681834,
+      "lng": 72.8308029422862,
+      "beds": 396,
+      "icu_beds": 28,
+      "has_generator": true,
+      "generator_fuel_hours": 27,
+      "powered_by": "SUB1",
+      "zone_id": "Z01"
+    },
+    {
+      "id": "H2",
+      "name": "Metro Hospital",
+      "lat": 19.03738048736667,
+      "lng": 72.83984151704303,
+      "beds": 348,
+      "icu_beds": 48,
+      "has_generator": false,
+      "generator_fuel_hours": 27,
+      "powered_by": "SUB2",
+      "zone_id": "Z04"
+    },
+    {
+      "id": "H3",
+      "name": "District Hospital",
+      "lat": 19.067371772147336,
+      "lng": 72.85084168178759,
+      "beds": 445,
+      "icu_beds": 22,
+      "has_generator": true,
+      "generator_fuel_hours": 28,
+      "powered_by": "SUB3",
+      "zone_id": "Z07"
+    },
+    {
+      "id": "H4",
+      "name": "Community Hospital",
+      "lat": 19.094734472900335,
+      "lng": 72.88251258090419,
+      "beds": 358,
+      "icu_beds": 21,
+      "has_generator": true,
+      "generator_fuel_hours": 20,
+      "powered_by": "SUB4",
+      "zone_id": "Z10"
+    },
+    {
+      "id": "H5",
+      "name": "Regional Hospital",
+      "lat": 19.112743394748247,
+      "lng": 72.88725093330659,
+      "beds": 429,
+      "icu_beds": 47,
+      "has_generator": true,
+      "generator_fuel_hours": 44,
+      "powered_by": "SUB5",
+      "zone_id": "Z13"
+    },
+    {
+      "id": "H6",
+      "name": "Central Hospital",
+      "lat": 19.10445947328896,
+      "lng": 72.8955840183527,
+      "beds": 281,
+      "icu_beds": 44,
+      "has_generator": true,
+      "generator_fuel_hours": 35,
+      "powered_by": "SUB1",
+      "zone_id": "Z16"
+    },
+    {
+      "id": "H7",
+      "name": "Municipal Hospital",
+      "lat": 19.084050121048477,
+      "lng": 72.83004570314638,
+      "beds": 332,
+      "icu_beds": 36,
+      "has_generator": true,
+      "generator_fuel_hours": 13,
+      "powered_by": "SUB2",
+      "zone_id": "Z19"
+    },
+    {
+      "id": "H8",
+      "name": "Trauma Hospital",
+      "lat": 19.104951172440185,
+      "lng": 72.85671356297162,
+      "beds": 115,
+      "icu_beds": 37,
+      "has_generator": true,
+      "generator_fuel_hours": 36,
+      "powered_by": "SUB3",
+      "zone_id": "Z22"
+    }
+  ],
+  "shelters": [
+    {
+      "id": "SH1",
+      "name": "School Shelter",
+      "lat": 19.021972320953612,
+      "lng": 72.83117889342194,
+      "capacity": 203,
+      "current_occupancy": 0,
+      "zone_id": "Z01",
+      "has_water": true,
+      "has_power": false
+    },
+    {
+      "id": "SH2",
+      "name": "Community Hall Shelter",
+      "lat": 19.037299951481586,
+      "lng": 72.84008330674972,
+      "capacity": 722,
+      "current_occupancy": 0,
+      "zone_id": "Z04",
+      "has_water": false,
+      "has_power": true
+    },
+    {
+      "id": "SH3",
+      "name": "Sports Complex Shelter",
+      "lat": 19.067398958783574,
+      "lng": 72.85191322823728,
+      "capacity": 235,
+      "current_occupancy": 0,
+      "zone_id": "Z07",
+      "has_water": true,
+      "has_power": true
+    },
+    {
+      "id": "SH4",
+      "name": "Temple Shelter",
+      "lat": 19.095096475165942,
+      "lng": 72.88356947508538,
+      "capacity": 492,
+      "current_occupancy": 0,
+      "zone_id": "Z10",
+      "has_water": false,
+      "has_power": true
+    },
+    {
+      "id": "SH5",
+      "name": "Municipal Hall Shelter",
+      "lat": 19.112569583116347,
+      "lng": 72.88468028693441,
+      "capacity": 211,
+      "current_occupancy": 0,
+      "zone_id": "Z13",
+      "has_water": true,
+      "has_power": false
+    },
+    {
+      "id": "SH6",
+      "name": "College Shelter",
+      "lat": 19.10652581509739,
+      "lng": 72.89541776945242,
+      "capacity": 928,
+      "current_occupancy": 0,
+      "zone_id": "Z16",
+      "has_water": true,
+      "has_power": true
+    },
+    {
+      "id": "SH7",
+      "name": "Stadium Shelter",
+      "lat": 19.082167270928544,
+      "lng": 72.82918642520595,
+      "capacity": 772,
+      "current_occupancy": 0,
+      "zone_id": "Z19",
+      "has_water": false,
+      "has_power": true
+    },
+    {
+      "id": "SH8",
+      "name": "Library Shelter",
+      "lat": 19.106373749343767,
+      "lng": 72.85476931793785,
+      "capacity": 677,
+      "current_occupancy": 0,
+      "zone_id": "Z22",
+      "has_water": true,
+      "has_power": true
+    },
+    {
+      "id": "SH9",
+      "name": "Civic Center Shelter",
+      "lat": 19.037713962763014,
+      "lng": 72.88421109616225,
+      "capacity": 357,
+      "current_occupancy": 0,
+      "zone_id": "Z25",
+      "has_water": true,
+      "has_power": true
+    },
+    {
+      "id": "SH10",
+      "name": "Church Shelter",
+      "lat": 19.1038266955091,
+      "lng": 72.91888557429016,
+      "capacity": 398,
+      "current_occupancy": 0,
+      "zone_id": "Z28",
+      "has_water": true,
+      "has_power": true
+    }
+  ],
+  "bridges": [
+    {
+      "id": "BR1",
+      "name": "Mithi River Bridge",
+      "lat": 19.0647,
+      "lng": 72.9253,
+      "flood_threshold_m": 1.9573467920900665,
+      "connects": [
+        "Z01",
+        "Z04"
+      ]
+    },
+    {
+      "id": "BR2",
+      "name": "Eastern Express Bridge",
+      "lat": 19.0357,
+      "lng": 72.8985,
+      "flood_threshold_m": 2.023028431349208,
+      "connects": [
+        "Z06",
+        "Z09"
+      ]
+    },
+    {
+      "id": "BR3",
+      "name": "Western Express Bridge",
+      "lat": 19.1127,
+      "lng": 72.8859,
+      "flood_threshold_m": 1.7535907984137513,
+      "connects": [
+        "Z11",
+        "Z14"
+      ]
+    },
+    {
+      "id": "BR4",
+      "name": "Sion-Panvel Bridge",
+      "lat": 19.0902,
+      "lng": 72.8752,
+      "flood_threshold_m": 2.5777333292825455,
+      "connects": [
+        "Z16",
+        "Z19"
+      ]
+    },
+    {
+      "id": "BR5",
+      "name": "LBS Road Bridge",
+      "lat": 19.1289,
+      "lng": 72.8394,
+      "flood_threshold_m": 2.923608310968524,
+      "connects": [
+        "Z21",
+        "Z24"
+      ]
+    }
+  ],
+  "roads": [
+    {
+      "id": "R1",
+      "from_zone": "Z01",
+      "to_zone": "Z03",
+      "distance_km": 1.1,
+      "travel_time_min": 38,
+      "flood_threshold_m": 1.1298620474128662,
+      "is_highway": true
+    },
+    {
+      "id": "R2",
+      "from_zone": "Z02",
+      "to_zone": "Z03",
+      "distance_km": 5,
+      "travel_time_min": 11,
+      "flood_threshold_m": 2.387591029956842,
+      "is_highway": false
+    },
+    {
+      "id": "R3",
+      "from_zone": "Z03",
+      "to_zone": "Z05",
+      "distance_km": 1.1,
+      "travel_time_min": 17,
+      "flood_threshold_m": 1.9186946906658575,
+      "is_highway": false
+    },
+    {
+      "id": "R4",
+      "from_zone": "Z04",
+      "to_zone": "Z05",
+      "distance_km": 6,
+      "travel_time_min": 23,
+      "flood_threshold_m": 1.6196799876912684,
+      "is_highway": true
+    },
+    {
+      "id": "R5",
+      "from_zone": "Z05",
+      "to_zone": "Z07",
+      "distance_km": 1.6,
+      "travel_time_min": 27,
+      "flood_threshold_m": 1.7588672058793873,
+      "is_highway": false
+    },
+    {
+      "id": "R6",
+      "from_zone": "Z06",
+      "to_zone": "Z07",
+      "distance_km": 3.1,
+      "travel_time_min": 27,
+      "flood_threshold_m": 1.0739020827631238,
+      "is_highway": false
+    },
+    {
+      "id": "R7",
+      "from_zone": "Z07",
+      "to_zone": "Z10",
+      "distance_km": 5.8,
+      "travel_time_min": 18,
+      "flood_threshold_m": 1.9084987592437535,
+      "is_highway": true
+    },
+    {
+      "id": "R8",
+      "from_zone": "Z08",
+      "to_zone": "Z09",
+      "distance_km": 2.4,
+      "travel_time_min": 12,
+      "flood_threshold_m": 1.7642508766763496,
+      "is_highway": true
+    },
+    {
+      "id": "R9",
+      "from_zone": "Z09",
+      "to_zone": "Z12",
+      "distance_km": 6,
+      "travel_time_min": 26,
+      "flood_threshold_m": 1.7477259000874417,
+      "is_highway": true
+    },
+    {
+      "id": "R10",
+      "from_zone": "Z10",
+      "to_zone": "Z12",
+      "distance_km": 3.1,
+      "travel_time_min": 23,
+      "flood_threshold_m": 1.6158131652315644,
+      "is_highway": false
+    },
+    {
+      "id": "R11",
+      "from_zone": "Z11",
+      "to_zone": "Z12",
+      "distance_km": 1.4,
+      "travel_time_min": 39,
+      "flood_threshold_m": 0.791676346746198,
+      "is_highway": false
+    },
+    {
+      "id": "R12",
+      "from_zone": "Z12",
+      "to_zone": "Z14",
+      "distance_km": 1.2,
+      "travel_time_min": 29,
+      "flood_threshold_m": 1.6166435221947366,
+      "is_highway": true
+    },
+    {
+      "id": "R13",
+      "from_zone": "Z13",
+      "to_zone": "Z16",
+      "distance_km": 5,
+      "travel_time_min": 32,
+      "flood_threshold_m": 0.7288639150161444,
+      "is_highway": false
+    },
+    {
+      "id": "R14",
+      "from_zone": "Z14",
+      "to_zone": "Z15",
+      "distance_km": 5.2,
+      "travel_time_min": 18,
+      "flood_threshold_m": 1.3963051002696867,
+      "is_highway": false
+    },
+    {
+      "id": "R15",
+      "from_zone": "Z15",
+      "to_zone": "Z18",
+      "distance_km": 2.3,
+      "travel_time_min": 39,
+      "flood_threshold_m": 0.9520456032948674,
+      "is_highway": true
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "nodes": [
+    {
+      "id": "SUB1",
+      "type": "substation",
+      "name": "Substation Alpha"
+    },
+    {
+      "id": "SUB2",
+      "type": "substation",
+      "name": "Substation Beta"
+    },
+    {
+      "id": "SUB3",
+      "type": "substation",
+      "name": "Substation Gamma"
+    },
+    {
+      "id": "SUB4",
+      "type": "substation",
+      "name": "Substation Delta"
+    },
+    {
+      "id": "SUB5",
+      "type": "substation",
+      "name": "Substation Epsilon"
+    },
+    {
+      "id": "PS1",
+      "type": "pump_station",
+      "name": "Pump Station North"
+    },
+    {
+      "id": "PS2",
+      "type": "pump_station",
+      "name": "Pump Station South"
+    },
+    {
+      "id": "PS3",
+      "type": "pump_station",
+      "name": "Pump Station East"
+    },
+    {
+      "id": "PS4",
+      "type": "pump_station",
+      "name": "Pump Station West"
+    },
+    {
+      "id": "H1",
+      "type": "hospital",
+      "name": "City General Hospital"
+    },
+    {
+      "id": "H2",
+      "type": "hospital",
+      "name": "Metro Hospital"
+    },
+    {
+      "id": "H3",
+      "type": "hospital",
+      "name": "District Hospital"
+    },
+    {
+      "id": "H4",
+      "type": "hospital",
+      "name": "Community Hospital"
+    },
+    {
+      "id": "H5",
+      "type": "hospital",
+      "name": "Regional Hospital"
+    },
+    {
+      "id": "H6",
+      "type": "hospital",
+      "name": "Central Hospital"
+    },
+    {
+      "id": "H7",
+      "type": "hospital",
+      "name": "Municipal Hospital"
+    },
+    {
+      "id": "H8",
+      "type": "hospital",
+      "name": "Trauma Hospital"
+    }
+  ],
+  "edges": [
+    {
+      "from": "SUB1",
+      "to": "PS1",
+      "type": "powers",
+      "lag_hours": 0,
+      "failure_probability": 0.85
+    },
+    {
+      "from": "SUB2",
+      "to": "PS2",
+      "type": "powers",
+      "lag_hours": 0,
+      "failure_probability": 0.85
+    },
+    {
+      "from": "SUB3",
+      "to": "PS3",
+      "type": "powers",
+      "lag_hours": 0,
+      "failure_probability": 0.85
+    },
+    {
+      "from": "SUB4",
+      "to": "PS4",
+      "type": "powers",
+      "lag_hours": 0,
+      "failure_probability": 0.85
+    },
+    {
+      "from": "SUB1",
+      "to": "H1",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB2",
+      "to": "H2",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB3",
+      "to": "H3",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB4",
+      "to": "H4",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB5",
+      "to": "H5",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB1",
+      "to": "H6",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB2",
+      "to": "H7",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "SUB3",
+      "to": "H8",
+      "type": "powers",
+      "lag_hours": 1,
+      "failure_probability": 0.7
+    },
+    {
+      "from": "PS1",
+      "to": "Z01",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z02",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z03",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z04",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z05",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z06",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z07",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS1",
+      "to": "Z08",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z08",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z09",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z10",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z11",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z12",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z13",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z14",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS2",
+      "to": "Z15",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z15",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z16",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z17",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z18",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z19",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z20",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z21",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS3",
+      "to": "Z22",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z22",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z23",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z24",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z25",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z26",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z27",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z28",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    },
+    {
+      "from": "PS4",
+      "to": "Z29",
+      "type": "supplies_water",
+      "lag_hours": 2,
+      "failure_probability": 0.6
+    }
+  ]
+}
